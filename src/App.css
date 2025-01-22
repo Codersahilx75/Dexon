@@ -1,0 +1,431 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* styles.css */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.footer {
+  background-image: url('../src/assets/img/hero-bg.jpg');
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Ensures it takes the full width */
+
+}
+
+
+.background{
+  background-image: url('./assets/img/hero-bg.jpg');
+}
+
+.content {
+  background-image: url('../src/assets/img/hero-bg.jpg');
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Ensures it takes the full width */
+  height: auto;
+  padding-bottom: 100px;
+}
+
+
+.content2{
+  background-image: url('../src/assets/img/content2.jpg');
+padding-bottom: 700px;
+}
+
+.content3{
+  background-image: url('../src/assets/img/service-bg.jpg');
+}
+/* General styles for background sections */
+.background-img, .background-img2, .background-img3 {
+  background-size: cover; /* Ensures the image covers the full area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  border-radius: 0.5rem; /* Smooth corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Unique backgrounds */
+.background-img {
+  background-image: url('../src/assets/img/box-bg2.png');
+}
+
+.background-img2 {
+  background-image: url('../src/assets/img/box-bg1.png');
+}
+
+.background-img3 {
+  background-image: url('../src/assets/img/box-bg3.png');
+}
+
+/* Left Section - Responsive Height */
+.left-section .background-img {
+  height: 320px; /* Default height */
+}
+
+@media (min-width: 768px) {
+  .left-section .background-img {
+    height: 400px; /* Medium screen height */
+  }
+
+  
+  
+ 
+}
+
+@media (min-width: 1024px) {
+  .left-section .background-img {
+    height: 600px; /* Large screen height */
+  }
+
+  .content5{
+    padding:100px;
+  }
+}
+
+/* Right Section - Responsive Height */
+.right-section .background-img2,
+.right-section .background-img3 {
+  height: 250px; /* Default height */
+}
+
+@media (min-width: 768px) {
+  .right-section .background-img2,
+  .right-section .background-img3 {
+    height: 300px; /* Medium screen height */
+  }
+}
+
+@media (min-width: 1024px) {
+  .right-section .background-img2,
+  .right-section .background-img3 {
+    height: 400px; /* Large screen height */
+  }
+}
+
+
+
+
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Menu toggle button for small screens */
+.menu-toggle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Navbar items container */
+.navbar-items {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+/* Show navbar items when menu is open on mobile */
+.navbar-items.block {
+  display: block;
+}
+
+/* Dropdown menu (initially hidden) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Display dropdown menu on hover */
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 10px;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+/* Change background color when hovering over dropdown items */
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+}
+
+/* Mobile-first responsive dropdown */
+@media (max-width: 768px) {
+  .navbar-items {
+    top: 60px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .move-star{
+    margin-top: 50px;
+  }
+
+  .content2{
+    padding-bottom: 1500px;
+  }
+
+  /* Ensure dropdowns are hidden by default */
+  .dropdown-menu {
+    display: none;
+  }
+
+  /* Make navbar items visible when menu is toggled */
+  .navbar-items.block {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: white;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 769px) {
+  .navbar-items {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* Dropdown menu only visible on hover */
+  .group:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+.rotate-infinite {
+  animation: rotate 9s linear infinite; /* 3 seconds for one full rotation */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.left-right-animation {
+  animation: left-right 5s infinite ease-in-out;
+ width: 50px;
+ height: 50px;
+}
+
+@keyframes left-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+
+.left-animation {
+  animation: left-right 5s infinite ease-in-out;
+
+}
+
+@keyframes left {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+/* Animation for the image */
+.animated-image {
+  width: 100px; /* Initial size */
+  height: auto;
+  animation: zoomOutInfinity 3s linear infinite; /* Animation properties */
+}
+
+/* Keyframes for zoom-out effect */
+@keyframes zoomOutInfinity {
+  0% {
+    transform: scale(1); /* Start at normal size */
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5); /* Shrink to half the size */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+    opacity: 1;
+  }
+}
+
+
+
+
+/* In your CSS file (e.g., styles.css) or inside <style> tag in JSX */
+@keyframes moveDiagonal {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); /* Top-left */
+  }
+  25% {
+    transform: translate(50%, -50%) rotate(90deg); /* Top-right */
+  }
+  50% {
+    transform: translate(50%, 50%) rotate(180deg); /* Bottom-right */
+  }
+  75% {
+    transform: translate(-50%, 50%) rotate(270deg); /* Bottom-left */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); /* Back to top-left */
+  }
+}
+
+.move-star {
+  animation: moveDiagonal 4s ease-in-out infinite;
+  
+};
+
+
+.content5{
+  background-image: url('../src/assets/img/call-bg.png');
+
+  
+}
+
+.content5{
+  background-image: url('../src/assets/img/call-bg.png');
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Ensures it takes the full width */
+  padding-bottom: 100px;
+
+}
+
+
+
+@keyframes upDownInfinity {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+.upDownAnimation {
+  animation: upDownInfinity 4s infinite; /* 2s duration, infinite loop */
+}
+
+
+
+
+  .zoom-animation {
+    display: inline-block;
+    animation: zoomInOut 3s infinite ease-in-out;
+  }
+
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); /* Adjust the zoom level here */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
