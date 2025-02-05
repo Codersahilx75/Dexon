@@ -19,7 +19,7 @@ import Content5 from './Content5';
        </div>
 
 
-      <div className='content2 bg-cover bg-center pb-0 sm:pb-[1500px]"'>
+      <div className='content2 '>
         <Content2/>
       </div>
 
@@ -31,7 +31,7 @@ import Content5 from './Content5';
         <Content4/>
       </div>
 
-      <div className='content5'>
+      <div className='content3'>
         <Content5/>
       </div>
 

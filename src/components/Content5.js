@@ -37,7 +37,7 @@ export default function Content5() {
 
         {/* Right Section */}
         <div className="flex flex-col items-center sm:items-start space-y-4 text-center mt-8 sm:mt-0 px-4 sm:px-0">
-          <img src={call} alt="call icon" className="mb-4 " />
+          <img src={call} alt="call icon" className="mb-4  mt-10 lg:mt-0" />
           <h2 className="text-3xl sm:text-4xl font-semibold">
             +98 069 (2350) 020
           </h2>

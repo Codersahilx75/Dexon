@@ -130,7 +130,7 @@
     height: 600px; /* Large screen height */
   }
   .content2 {
-    min-height: 250vh; /* Full height of the viewport */
+    min-height: 213vh; /* Full height of the viewport */
     height: auto; /* Auto height for content */
   }
   
@@ -239,7 +239,7 @@ body {
   }
 
   .content2 {
-    min-height: 280vh; /* Adjusted height for mobile view */
+    min-height: 275vh; /* Adjusted height for mobile view */
   }
 
   /* Ensure dropdowns are hidden by default */
@@ -375,17 +375,9 @@ body {
 };
 
 
-.content5{
-  background-image: url('../src/assets/img/call-bg.png');
-}
 
 .content5{
-  background-image: url('../src/assets/img/call-bg.png');
-
-  width: 100%; /* Ensures it takes the full width */
-  height: auto;
-
-
+  background-image: url('../src/assets/img/hero-bg.jpg');
 }
 
 
