@@ -126,10 +126,11 @@
   .left-section .background-img {
     height: 600px; /* Large screen height */
   }
-
-  .content2{
-    height: 850px;
+  .content2 {
+    min-height: 250vh; /* Full height of the viewport */
+    height: auto; /* Auto height for content */
   }
+  
 
   .content5{
     padding:100px;
@@ -233,8 +234,8 @@ body {
     margin-top: 50px;
   }
 
-  .content2{
-    height: 1500px;
+  .content2 {
+    min-height: 280vh; /* Adjusted height for mobile view */
   }
 
   /* Ensure dropdowns are hidden by default */
