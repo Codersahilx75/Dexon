@@ -114,8 +114,11 @@
   }
 
   .content5{
-    padding-bottom: 100px;
+    height: auto;
+    min-height: 100vh;
   }
+
+ 
 
   
   
@@ -133,7 +136,8 @@
   
 
   .content5{
-    padding:100px;
+    height: auto;
+    min-height:60vh;
   }
 }
 
@@ -377,10 +381,9 @@ body {
 
 .content5{
   background-image: url('../src/assets/img/call-bg.png');
-  background-size: cover; /* Ensures the background covers the entire area */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+
   width: 100%; /* Ensures it takes the full width */
+  height: auto;
 
 
 }
