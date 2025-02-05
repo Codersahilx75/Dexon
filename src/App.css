@@ -75,7 +75,7 @@
 
 .content2{
   background-image: url('../src/assets/img/content2.jpg');
-padding-bottom: 700px;
+
 }
 
 .content3{
@@ -113,6 +113,10 @@ padding-bottom: 700px;
     height: 400px; /* Medium screen height */
   }
 
+  .content5{
+    padding-bottom: 100px;
+  }
+
   
   
  
@@ -121,6 +125,10 @@ padding-bottom: 700px;
 @media (min-width: 1024px) {
   .left-section .background-img {
     height: 600px; /* Large screen height */
+  }
+
+  .content2{
+    height: 850px;
   }
 
   .content5{
@@ -226,7 +234,7 @@ body {
   }
 
   .content2{
-    padding-bottom: 1500px;
+    height: 1500px;
   }
 
   /* Ensure dropdowns are hidden by default */
@@ -364,8 +372,6 @@ body {
 
 .content5{
   background-image: url('../src/assets/img/call-bg.png');
-
-  
 }
 
 .content5{
@@ -374,9 +380,10 @@ body {
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   width: 100%; /* Ensures it takes the full width */
-  padding-bottom: 100px;
+
 
 }
+
 
 
 
